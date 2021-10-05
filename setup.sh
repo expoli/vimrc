@@ -72,10 +72,10 @@ pip_deps=(
 )
 
 # 必要依赖安装
-last_update=$(stat -c %Y /var/cache/apt/pkgcache.bin)
+last_update=$(stat -c %Y /var/cache/pacman/pkg/)
 now=$(date +%s)
 if [ $((now - last_update)) -gt 3600 ]; then
-  sudo apt-get update
+  sudo pacman -Syu
 fi
 
 # shellcheck disable=SC2128 disable=SC2086 disable=SC2068
