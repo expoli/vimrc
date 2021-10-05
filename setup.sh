@@ -24,7 +24,7 @@ sh_deps=(
 )
 
 pyenv_deps=(
-"base-devel wget curl llvm"
+"base-devel wget curl llvm python-pip"
 )
 
 ycm_deps=(
