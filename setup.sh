@@ -79,7 +79,7 @@ if [ $((now - last_update)) -gt 3600 ]; then
 fi
 
 # shellcheck disable=SC2128 disable=SC2086 disable=SC2068
-sudo apt install -y ${deb_deps[@]} $optional_deps
+sudo pacman -S --noconfirm ${deb_deps[@]} $optional_deps
 
 # 安装 pyenv
 echo "[+] pyenv install"
