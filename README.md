@@ -7,7 +7,7 @@ My **PERSONAL** vimrc bootstrap script.
 ## Getting Started
 
 ```bash
-git clone https://github.com/c4pr1c3/vimrc.git ~/.vim
+git clone https://github.com/expoli/vimrc.git ~/.vim
 cd ~/.vim && bash setup.sh
 
 # open vim after the finish of the above scripts
