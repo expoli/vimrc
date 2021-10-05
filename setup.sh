@@ -2,14 +2,12 @@
 
 set -e
 
-if [[ ! "$(lsb_release -i -s 2>/dev/null)" =~ Ubuntu|Kali ]];then
-   read -r -p "This script SHOULD ONLY be run on Ubuntu or Kali, run at your own RISK: (y/n)" agree
+if [[ ! "$(lsb_release -i -s 2>/dev/null)" =~ EndeavourOS|Arch ]];then
+   read -r -p "This script SHOULD ONLY be run on Arch or EndeavourOS, run at your own RISK: (y/n)" agree
    if [[ ! "$agree" =~ y|Y ]];then
      exit 1
    fi
    agree=''
-else
-  export DEBIAN_FRONTEND=noninteractive
 fi
 
 if [[ $EUID -eq 0 ]]; then
@@ -26,13 +24,11 @@ sh_deps=(
 )
 
 pyenv_deps=(
-"make build-essential libssl-dev zlib1g-dev libbz2-dev \
-libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
-xz-utils tk-dev libffi-dev liblzma-dev python-openssl"
+"base-devel wget curl llvm"
 )
 
 ycm_deps=(
-"build-essential cmake python3-dev"
+"cmake"
 )
 
 other_deps=(
@@ -43,7 +39,7 @@ other_deps=(
 )
 
 deb_deps=(
-"vim-nox"
+"vim"
 "${sh_deps[@]}"
 "${pyenv_deps[@]}"
 "${ycm_deps[@]}"
