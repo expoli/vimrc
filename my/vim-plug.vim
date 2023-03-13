@@ -145,6 +145,9 @@ Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'skywind3000/gutentags_plus'
 
+"
+Plug 'vim-scripts/AutoComplPop'
+
 " Initialize plugin system
 call plug#end()
 

@@ -91,7 +91,7 @@ autocmd filetype cpp nnoremap <F1> :w <bar> exec '!g++ --std=c++11 -pthread '.sh
 " autocmd filetype dot nnoremap <F1> :w <bar> exec '!dot -Tsvg '.shellescape('%').' > ./svg/'.shellescape('%:r').' && open ./bin/'.shellescape('%:r')<CR>
 autocmd filetype dot nnoremap <F1> :w <bar> exec '!dot -Tsvg sqlparse.dot > sqlparse.svg'<CR>
 autocmd Filetype java nnoremap <F1> :w <bar> exec '!javac '.shellescape('%'). ' -d ./bin'<CR>
-autocmd filetype java nnoremap <F2> :w <bar> exec '!java -cp ./bin '.shellescape('%:r')<CR>
+"autocmd filetype java nnoremap <F2> :w <bar> exec '!java -cp ./bin '.shellescape('%:r')<CR>
 
 
 " shortcut for markdown
@@ -132,11 +132,11 @@ endfunc
 
 " 解决超长行移动的困难
 " 重新定义<UP> <DOWN> 
-nmap <UP> gk
-imap <UP> <ESC>gka
+"nmap <UP> gk
+"imap <UP> <ESC>gka
 
-nmap <DOWN> gj
-imap <DOWN> <ESC>gja
+"nmap <DOWN> gj
+"imap <DOWN> <ESC>gja
 
 " for quick save in normal mode
 map <silent> <F2> :write<CR>

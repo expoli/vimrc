@@ -50,6 +50,7 @@ runtime my/vim-script/sdcv.vim
 runtime my/vim-script/hexmode.vim
 runtime my/vim-script/set-color-coloum.vim
 runtime my/vim-script/add-file-title.vim
+runtime my/vim-script/add-auto-pop-dict.vim
 
 " plugin settings
 runtime my/plugin/asyncrun.vim
