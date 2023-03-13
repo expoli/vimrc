@@ -49,6 +49,7 @@ runtime my/misc.vim
 runtime my/vim-script/sdcv.vim
 runtime my/vim-script/hexmode.vim
 runtime my/vim-script/set-color-coloum.vim
+runtime my/vim-script/add-file-title.vim
 
 " plugin settings
 runtime my/plugin/asyncrun.vim

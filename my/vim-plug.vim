@@ -78,7 +78,6 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'tpope/vim-dispatch'
 " Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'powerline/powerline'
-Plug 'bling/vim-airline'
 Plug 'rizzatti/dash.vim'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'nvie/vim-flake8'
@@ -102,6 +101,10 @@ Plug 'vim-scripts/perl-support.vim'
 Plug 'vim-scripts/sessionman.vim'
 Plug 'vim-scripts/taglist.vim'
 Plug 'vim-scripts/vcscommand.vim'
+" a.vim 一些快速命令可以在源文件和头文件之间快速切换。
+Plug 'vim-scripts/a.vim'
+" 这是一个非常有用的插件，在使用多个缓冲区时能够以类似选项卡的方式查看缓冲区状态是非常令人愉快的。
+Plug 'vim-scripts/minibufexpl.vim'
 
 " Bro
 Plug 'mephux/bro.vim'
@@ -110,7 +113,11 @@ Plug 'mephux/bro.vim'
 Plug 'mzlogin/vim-markdown-toc'
 
 " https://github.com/plasticboy/vim-markdown
+Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
+
+Plug 'vim-airline/vim-airline'
+Plug 'airblade/vim-gitgutter'
 
 " https://github.com/vimwiki/vimwiki
 Plug 'vimwiki/vimwiki'
