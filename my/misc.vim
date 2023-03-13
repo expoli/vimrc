@@ -16,6 +16,9 @@ set fileencodings=utf8,gbk,ucs-bom,cp936
 set linebreak
 let s:w_mywin=0
 
+" fix The legacy SnipMate parser is deprecated. Please see :h SnipMate-deprecate.
+let g:snipMate = { 'snippet_version' : 1 }
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
