@@ -56,7 +56,7 @@ runtime my/plugin/gundo.vim
 runtime my/plugin/vcscommand.vim
 runtime my/plugin/load_template.vim
 runtime my/plugin/taglist.vim
-runtime my/plugin/youcompleteme.vim
+" runtime my/plugin/youcompleteme.vim
 runtime my/plugin/vimwiki.vim
 runtime my/plugin/leaderf.vim
 runtime my/plugin/quickui.vim
