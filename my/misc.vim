@@ -12,7 +12,8 @@ set undolevels=1000 "maximum number of changes that can be undone
 
 set encoding=utf8
 let &termencoding=&encoding
-set fileencodings=utf8,gbk,ucs-bom,cp936
+set fileencoding=utf-8
+set fileencodings=utf8,gbk,ucs-bom,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set linebreak
 let s:w_mywin=0
 
@@ -25,8 +26,37 @@ set backspace=indent,eol,start
 set history=50  " keep 50 lines of command line history
 set incsearch  " do incremental searching
 
-"mouse function support
-set mouse=a
+set fenc=" "
+"显示匹配
+set showmatch
+"括号匹配
+inoremap ( ()<ESC>i
+inoremap [ []<ESC>i
+inoremap ' ''<ESC>i
+inoremap " ""<ESC>i
+set selectmode=mouse,key
+set selection=exclusive
+set mouse=n "可视模式下使用鼠标，set mouse=a这个命令导致在vim下复制粘贴不好用
+set ai "vim中复制粘贴保存格式
+set ignorecase "设置默认大小写不敏感查找
+set smartcase "如果有大小写字母，则切换到大小写敏感查找
+set tags=tags;/ "告诉在每个目录下如果找不到tags就到上一层目录去找
+
+set ruler           " 显示标尺"
+autocmd InsertEnter * se cul    " 用浅色高亮当前行"
+set shortmess=atI   " 启动的时候不显示那个援助乌干达儿童的提示
+
+" :colorscheme desert     " 设置主题
+" vim-commentary style set 注释针对不同语言的注释方法
+autocmd FileType cpp set commentstring=//\ %s
+autocmd FileType php set commentstring=//\ %s
+" set modeline
+set modeline
+" 搜索关键词高亮
+set hlsearch
+" 开启语义分析
+syntax enable
+syntax on
 
 " disable auto backup
 set nobackup
