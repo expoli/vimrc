@@ -5,7 +5,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   if v:shell_error
     " just in case of github access failure
     silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-      \ https://gitee.com/c4pr1c3/vim-plug/raw/master/plug.vim
+      \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     if v:shell_error
       exit
     else
@@ -126,7 +126,7 @@ Plug 'vimwiki/vimwiki'
 " Plug 'rhysd/vim-grammarous'
 
 " https://github.com/junegunn/fzf
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf'
 
 "Plug 'tweekmonster/django-plus'
 
@@ -136,17 +136,17 @@ Plug 'junegunn/vim-easy-align'
 " Always load the vim-devicons as the very last one.
 Plug 'ryanoasis/vim-devicons'
 
-" Vim 8.2+ only!!!
-Plug 'skywind3000/vim-quickui'
 
 " vim 8.1.1615+ only!!!
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'skywind3000/gutentags_plus'
 
-"
-Plug 'vim-scripts/AutoComplPop'
+" Vim 8.2+ only!!!
+Plug 'skywind3000/vim-quickui'
+Plug 'skywind3000/gutentags_plus'
+Plug 'skywind3000/vim-dict'
+Plug 'skywind3000/vim-auto-popmenu'
 
 " Initialize plugin system
 call plug#end()

@@ -36,6 +36,7 @@ other_deps=(
 "cscope"
 "unzip"
 "global" # gtags
+"fzf"
 )
 
 deb_deps=(

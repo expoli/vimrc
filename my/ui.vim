@@ -39,12 +39,8 @@ set selectmode=mouse,key
 set selection=exclusive
 set mouse=n "可视模式下使用鼠标，set mouse=a这个命令导致在vim下复制粘贴不好用
 set ai "vim中复制粘贴保存格式
-set ignorecase "设置默认大小写不敏感查找
-set smartcase "如果有大小写字母，则切换到大小写敏感查找
 set tags=tags;/ "告诉在每个目录下如果找不到tags就到上一层目录去找
 set encoding=utf-8
-set fileencoding=utf-8
-set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 
 set ruler           " 显示标尺"
 autocmd InsertEnter * se cul    " 用浅色高亮当前行"

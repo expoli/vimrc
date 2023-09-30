@@ -3,6 +3,7 @@ set autoread
 
 " 搜索时忽略大小写
 set ignorecase
+set smartcase "如果有大小写字母，则切换到大小写敏感查找
 
 " vim 7.3新特性：持久撤销 配置
 " 重启后撤销历史可用 persistent undo 
@@ -12,7 +13,8 @@ set undolevels=1000 "maximum number of changes that can be undone
 
 set encoding=utf8
 let &termencoding=&encoding
-set fileencodings=utf8,gbk,ucs-bom,cp936
+set fileencoding=utf-8
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set linebreak
 let s:w_mywin=0
 
@@ -26,7 +28,7 @@ set history=50  " keep 50 lines of command line history
 set incsearch  " do incremental searching
 
 "mouse function support
-set mouse=a
+"set mouse=a
 
 " disable auto backup
 set nobackup
